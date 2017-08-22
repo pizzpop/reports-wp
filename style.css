@@ -249,7 +249,7 @@ h2 {
 }
 
 .card--bottom {
-  background: url("../img/wave-card.svg") no-repeat -5px -2px;
+  background: url("./images/wave-card.svg") no-repeat -5px -2px;
   background-size: 105%;
   color: #4e4e61;
   min-height: 260px;
@@ -261,7 +261,7 @@ h2 {
 }
 
 .card--top-blue+.card--bottom {
-  background: url("../img/wave-card2.svg") no-repeat -5px -2px;
+  background: url("./images/wave-card2.svg") no-repeat -5px -2px;
   background-size: 111%;
 }
 
@@ -270,7 +270,7 @@ h2 {
 }
 
 .card--top-violet+.card--bottom {
-  background: url("../img/wave-card3.svg") no-repeat -5px -1px;
+  background: url("./images/wave-card3.svg") no-repeat -5px -1px;
   background-size: 106%;
 }
 
