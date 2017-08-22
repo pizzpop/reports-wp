@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="450px" height="87px" viewBox="0 0 450 87" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>Path-4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="100%" x2="0%" y2="17.2510676%" id="linearGradient-1">
+            <stop stop-color="#04CAAC" offset="0%"></stop>
+            <stop stop-color="#5EFFD6" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="wave" fill-rule="nonzero" fill="url(#linearGradient-1)">
+            <path d="M0,13.884935 C62.2267808,60.056435 115.614033,83.142186 160.161756,83.142186 C204.70948,83.142186 252.47361,69.506684 303.454147,42.235682 C368.283167,9.569891 418.079376,-4.04486642 450,1.39999998 C450,35.357793 450,23.910622 450,87 L0,87 L0,13.884935 Z" id="Path-4"></path>
+        </g>
+    </g>
+</svg>
