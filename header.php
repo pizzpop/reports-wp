@@ -32,7 +32,7 @@
       		<div class="container--max">
 	      		<?php
 				the_custom_logo(); ?>
-				<a class="button" href="./sign-in.html">Sign In</a>
+				<a class="button" href="./sign-in.html">Sign Up</a>
 				<?php
 					wp_nav_menu( array(
 						'theme_location' => 'menu-1',
