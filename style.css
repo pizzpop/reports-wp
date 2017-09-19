@@ -15,7 +15,7 @@ body {
   background: #D9D9D9;
   font-size: 22px;
   height: auto;
-  padding-top: 80px;
+  padding-top: 70px;
 }
 
 .logged-in nav {
@@ -145,8 +145,6 @@ h2 {
 
 
 
-
-
 /* all cols even */
 
 .col {
@@ -193,6 +191,7 @@ h2 {
   margin: 0 3rem 4rem;
   padding: 0;
 }
+
 
 .card:first-child {
   margin-left: 0;
@@ -274,25 +273,76 @@ h2 {
   background-size: 106%;
 }
 
-.faq--title {
-  margin: 0 auto 4rem;
+
+
+.contentblock {
+  background-color: white;
+  margin: 0 3rem 4rem;
+  padding: 0;
 }
 
-.faq--row {
-  margin: 4rem auto;
-}
-
-.faq h3 {
-  margin-bottom: 0.6rem;
-}
-
-.faq p {
+.contentblock p {
   font-size: 1.8rem;
   margin-bottom: 2rem;
 }
 
+.contentblock h2 {
+  font-size: 3.2rem;
 
+}
 
+.contentblock h2 + p {
+  align-items: flex-end
+
+}
+
+.content-area {
+	width: 100%;
+	padding: 80px 0;
+	min-height: 40px;
+	overflow: hidden;
+	background-color: white;
+}
+.content-area:nth-of-type(odd) {
+	background-color: #EDEDED;
+}
+
+.container {
+	width: 84%;
+	margin: 0 auto;
+	min-height: 40px;
+	overflow: hidden;
+}
+
+.half {
+	width: 46%;
+	min-height: 40px;
+	overflow: hidden;
+}
+
+.half:nth-of-type(odd) {
+	float: left;
+}
+.half:nth-of-type(even) {
+	float: right;
+}
+
+#section:nth-of-type(odd) #halfimg {
+	float: right !important;
+}
+#section:nth-of-type(odd) #halftext {
+	float: left !important;
+}
+
+.half h2 {
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+}
+
+.half p {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
 
 
 /******* Links ********/
@@ -375,7 +425,7 @@ ul {
 nav {
   background-color: white;
   border-bottom: 1px solid #ededed;
-  padding: 2rem 0 0.4rem;
+  padding: 1rem 0 0.2rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -480,16 +530,16 @@ nav .menu li {
 
   .img--holder {
     position: relative;
-    width: 60%;
-  }
+    width: 65%    
+    }
+    
+    
   .img--holder svg,
   .img--holder img {
-    height: 50vh;
     left: 0;
     position: absolute;
-    top: 5rem;
-    width: 50vh;
-  }
+    top: 10rem;
+    }
 
   .hero--content h1 {
     line-height: 1.3;
@@ -541,14 +591,21 @@ nav .menu li {
   margin-bottom: 2rem;
 }
 
+.colorblock p {
+  margin-bottom: 3rem;
+}
+
 .colorblock a+p {
   font-size: 1.6rem;
   margin-top: 2rem;
+
 }
 
 .colorblock a+p a {
   color: white;
+  padding: 10rem 0 12rem;
 }
+
 
 footer {
   background-color: #00a6ff;
@@ -557,7 +614,7 @@ footer {
 }
 
 footer.home {
-  background-image: linear-gradient(0deg, #2196f3 20%, #04caac 100%);
+  background-image: linear-gradient(0deg, #00A6FF 20%, #46D987 100%);
 }
 
 footer .grid--flex {
@@ -586,7 +643,7 @@ footer a {
 }
 
 .contactbar {
-  background-color: #2196f3;
+  background-color: #00A6FF;
   padding: 2rem 0 1.4rem;
   text-align: right;
 }
@@ -607,6 +664,135 @@ footer a {
 
 
 
+/****** BLOG *******/
+.widthWrapper {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+#postIndex {
+  margin: 3em auto;
+}
+
+article {
+  margin-top: -0.063em;
+}
+
+article a {
+  display: block;
+  padding: 2.374em 2.5em 2.5em 2.5em;
+  overflow: hidden;
+  border-top: .063em solid #ccc;
+  border-bottom: .063em solid #ccc;
+}
+
+article a:hover {
+  background: #eee;
+  border-top: #666 solid .25em;
+  padding: 2.187em 2.5em 2.5em 2.5em;
+}
+
+.postImg {
+  float: left;
+  width: 25%;
+  box-sizing: border-box;
+  padding-right: 2em;
+}
+
+.postImg img {
+  width: 100%;
+}
+
+article a h2 {
+  float: right; 
+  width: 75%;
+}
+
+article a:hover h2 {
+  color: #157EBF;
+}
+
+article a p {
+  color: #444;
+  float: right; 
+  width: 75%;
+}
+
+article a:hover p {
+  color: #222;
+}
+
+@media only screen and (max-width: 750px) {
+  #postIndex {
+    width: 100%;
+  }
+
+  article a {
+    padding: 2.374em 1.5em 2.5em 1.5em;
+  }
+
+  article a:hover {
+    padding: 2.187em 1.5em 2.5em 1.5em;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .postImg {
+    display: none;
+  }
+
+  article a p, article a h2 {
+    width: 100%;
+  }
+
+}
+
+
+
+
+/****** FORMS *******/
+
+input {
+    background-color:#FFF;
+    color:#5b5e6d;
+    text-decoration:none;
+    border:1px solid #EBEBEB;
+    border-radius:4px;
+    box-shadow:none;
+    padding:1.15rem 1rem;
+    display:inline-block}
+
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=text] {
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+
+input [type=email] {
+background-color: #9f64ea;
+  border-radius: 26px;
+  color: white;
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding: 6px 0;
+  text-align: center;
+  text-decoration: none;
+  min-width: 160px;
+  transition: background-color 0.2s;
+    
+} 
 
 
 /****** UTILITIES *******/
